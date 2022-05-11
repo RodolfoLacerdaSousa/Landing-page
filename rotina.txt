@@ -1,3 +1,7 @@
 Dia 1-> 
 	Criação de arquivos, Estrutura e escolha de fontes.
 	Imagens SVG -> https://www.svgbackgrounds.com/
+
+Di1 2-> (muito tempo depois 10 dias +/-)
+	Criação do Menu
+	Re-organização do CSS, dividindo com comentários
