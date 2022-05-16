@@ -22,6 +22,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -74,6 +75,11 @@ a{
 .section{
     min-height: 100vh; /*Altura min de 100 view height para todos que tiverem essa classe*/
 }
+
+.menu-spacing{
+    height: 65px; /*MUDAR PARA REM*/
+}
+
 /*CLASS.CSS*/
 
 /*MENU.CSS*/
@@ -84,6 +90,7 @@ a{
      left: 0;
      right: 0;
      width: 100%;
+     z-index: 1; /*para que tudo fique abaixo do Menu (principalente a img)*/
      border-bottom: 0.1rem solid var(--light-gray-color); /*borda cinzza na parte de baixo do menu*/
 }
 
@@ -132,6 +139,40 @@ a{
     left: 25%;
 }
 /*MENU.CSS*/
+
+
+/*INTRO CSS*/
+
+.intro-content { /*Aqui ta fazendo com GRID*/
+    position: relative;
+    top: -8rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.intro-text-content, .intro-img{ /*Aqui ta dentro de uma coluna da GRID, ta colocando 1 FLEX*/
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.intro-text-content h2{
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.intro-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*INTRO CSS*/
+
 
 /*Fontes
 font-family: 'Montserrat', sans-serif;
